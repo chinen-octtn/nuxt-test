@@ -2,16 +2,10 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">nuxt-demo</h1>
+      <h1 class="title">nuxt-demo-test</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
+        <!-- <a href="./about/" class="button--green">about</a> -->
+        <nuxt-link to="./about/" class="button--green">about</nuxt-link>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
@@ -26,7 +20,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  // head() {
+  //   return {
+  //     htmlAttrs: {
+  //       lang: 'ja',
+  //     },
+  //   }
+  // },
+}
 </script>
 
 <style>
