@@ -1,9 +1,14 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-  // change dist directory frome dist
+  // Change dist directory frome dist
   generate: {
-    dir: "docs"
+    dir: "docs" // 出力先のディレクトリ
+  },
+
+  // sub directory path
+  router: {
+    base: '/nuxt-test/'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
